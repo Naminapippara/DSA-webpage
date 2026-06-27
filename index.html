@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- HOME PAGE -->
+    <section id="homePage" class="page active">
+        <h1 class="main-title">DATA STRUCTURES</h1>
+
+        <div class="home-buttons">
+            <div class="card" onclick="openLinear()">
+                LINEAR
+            </div>
+
+            <div class="card" onclick="openNonLinear()">
+                NON-LINEAR
+            </div>
+        </div>
+    </section>
+
+    <!-- LINEAR PAGE -->
+     <!-- LINEAR PAGE -->
+<section id="linearPage" class="page">
+
+    <button class="back-btn" onclick="goHome()">⬅ Back</button>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <button onclick="showLinearDS('array')">Array</button>
+            <button onclick="showLinearDS('stack')">Stack</button>
+            <button onclick="showLinearDS('queue')">Queue</button>
+            <button onclick="showLinearDS('linkedlist')">Linked List</button>
+        </div>
+
+        <div class="content">
+
+            <h2 id="dsTitle">Select a Data Structure</h2>
+
+            <div class="main-area">
+
+                <!-- LEFT SIDE -->
+                <div class="left-panel">
+
+                    <div class="operations" id="operations">
+                    </div>
+
+                    <div id="message" class="message-box">
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="right-panel">
+
+                    <h3>Visualization</h3>
+
+                    <div class="visualization" id="visualization">
+                        Visualization Area
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- THEORY AT BOTTOM -->
+            <div class="theory-box" id="theoryBox">
+                Theory will appear here...
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- <section id="linearPage" class="page">
+        <button class="back-btn" onclick="goHome()">⬅ Back</button>
+
+        <div class="container">
+            <div class="sidebar">
+                <button onclick="showLinearDS('array')">Array</button>
+                <button onclick="showLinearDS('stack')">Stack</button>
+                <button onclick="showLinearDS('queue')">Queue</button>
+                <button onclick="showLinearDS('linkedlist')">Linked List</button>
+            </div>
+
+            <div class="content">
+                <h2 id="dsTitle">Select a Data Structure</h2>
+
+              <div class="main-area">
+
+    <div class="left-panel">
+        <div class="operations" id="operations"></div>
+
+        <div id="message" class="message-box"></div>
+    </div>
+
+    <div class="right-panel">
+        <h3>Visualization</h3>
+
+        <div class="visualization" id="visualization">
+            Visualization Area
+        </div>
+    </div>
+
+</div>
+
+<div class="theory-box" id="theoryBox">
+    Theory will appear here...
+</div>  
+            </div>
+        </div>
+    </section> -->
+
+    <!-- NON LINEAR PAGE -->
+    <section id="nonLinearPage" class="page">
+        <button class="back-btn" onclick="goHome()">⬅ Back</button>
+
+        <div class="container">
+            <div class="sidebar">
+                <button onclick="showNonLinearDS('tree')">Tree</button>
+                <button onclick="showNonLinearDS('graph')">Graph</button>
+            </div>
+
+            <div class="content">
+                <h2 id="nlTitle">Select a Data Structure</h2>
+
+                <div class="theory-box" id="nlTheory">
+                    Theory will appear here...
+                </div>
+
+                <div class="operations" id="nlOperations">
+                </div>
+
+                <div class="visualization" id="nlVisualization">
+                    Visualization Area
+                </div>
+
+                <div id="nlMessage"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
